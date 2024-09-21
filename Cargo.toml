@@ -1,0 +1,20 @@
+[package]
+name = "nu_plugin_compress"
+version = "0.1.0"
+edition = "2021"
+authors = ["yybit <yybit2@gmail.com>"]
+license = "Apache-2.0"
+homepage = "https://github.com/yybit/nu_plugin_compress"
+repository = "https://github.com/yybit/nu_plugin_compress"
+description = "A nushell plugin for compression and decompression, supporting zstd, gzip, bzip2, and xz."
+readme = "README.md"
+include = ["**/*.rs", "Cargo.toml"]
+keywords = ["nu", "plugin", "compression", "gzip", "bzip2", "zstd", "xz"]
+
+[dependencies]
+bzip2 = "0.4.4"
+flate2 = "1.0.33"
+nu-plugin = "0.98.0"
+nu-protocol = "0.98.0"
+xz2 = "0.1.7"
+zstd = "0.13.2"
