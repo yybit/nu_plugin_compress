@@ -9,7 +9,7 @@ repository = "https://github.com/yybit/nu_plugin_compress"
 description = "A nushell plugin for compression and decompression, supporting zstd, gzip, bzip2, and xz."
 readme = "README.md"
 include = ["**/*.rs", "Cargo.toml"]
-keywords = ["nu", "plugin", "compression", "gzip", "bzip2", "zstd", "xz"]
+keywords = ["nu", "plugin", "compression", "gzip", "zstd"]
 
 [dependencies]
 bzip2 = "0.4.4"
