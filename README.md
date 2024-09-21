@@ -15,8 +15,6 @@ Supported compression formats include:
 |xz|to xz|from xz|
 |bzip2|to bz2|from bz2|
 
-The compression command can specify the level parameter.
-
 
 ### Installation
 ```shell
@@ -29,6 +27,15 @@ plugin use compress
 ```shell
 # compress and save
 "hello" | to gz | save hello.gz
+# compress with level 7, Default level is 3
+"hello" | to xz -l 7
 # decompress and print
 open hello.gz | decode
+```
+
+### Example
+```shell
+> open hello.gz
+Length: unknown (stream) | printable whitespace ascii_other non_ascii
+00000000:   68 65 6c 6c  6f                                      hello
 ```
