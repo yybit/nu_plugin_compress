@@ -31,6 +31,10 @@ plugin use compress
 "hello" | to xz -l 7
 # decompress and print
 open hello.gz | decode
+# archive and compress
+tar cvf - hello.txt | to gz | save hello.tar.gz
+# decompress and unarchive
+open hello.tar.gz | tar xvf -
 ```
 
 ### Example
